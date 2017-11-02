@@ -1,0 +1,25 @@
+@import '../base/_variables';
+
+.list-suggestion {
+  background-color: white;
+  border-top: none;
+  list-style: none;
+  margin-top: 0 !important;
+  -webkit-box-shadow: 0 21px 38px rgba(0,0,0,0.2);
+  box-shadow: 0 21px 38px rgba(0,0,0,0.2);
+  border-radius: 0 0 4px 4px;
+  max-height: 430px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+
+  > li > button {
+    margin: 0;
+    padding: 8px 15px;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+  }
+}

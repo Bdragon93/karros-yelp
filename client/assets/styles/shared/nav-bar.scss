@@ -1,0 +1,108 @@
+@import '../base/_variables';
+
+.nav-bar {
+  //height: 50px; 
+  //line-height: 50px;
+  //position: relative;
+  font-size: 14px;
+
+  .nb-wrapper {
+    padding: 12px 0;
+    background: url(https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/c146b0884f6a/assets/img/structural/header_stars.png) ;
+    background-color: $bg-navbar;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .btn-search {
+    border-radius: 0 4px 4px 0;
+    box-shadow: none;
+    background-color: $color-red-f1f;
+    line-height: 36px;
+    padding: 0 15px;
+    width: 54px;
+    font-weight: 700;
+    color: $white;
+    margin: 0;
+    vertical-align: middle;
+  }
+}
+
+.nb-container {
+  display: table;
+  width: 960px;
+  margin: 0 auto;
+
+  > * {
+    display: table-cell;
+    //margin: 0 10px;
+  }
+
+  .logo {
+    vertical-align: middle;
+    background-image: url(https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_design_web/48792dd29811/assets/img/logos_desktop/default.png);
+    background-size: 80px 40px;
+    width: 80px;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+
+.nb-lookup-wrapper {
+  > * {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 36px;
+  }
+
+  .lookup-content {
+    padding: 8px 12px;
+    display: flex;
+    align-items: baseline;
+    //position: relative;
+
+    label {
+      margin-right: 5px;
+      font-weight: 700;
+    }
+
+    input {
+      font-size: inherit;
+      flex-grow: 1;
+    }
+
+
+    .lookup-suggestion {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      left: 0;
+      border-top: 1px solid $gray-c;
+    }
+  }
+
+  .lookup-search {
+    border-radius: 4px 0 0 4px;
+    background-color: $white;
+    position: relative;
+
+    &.has-suggest {
+      border-radius: 4px 0 0 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 0;
+      bottom: 8px;
+      width: 1px;
+      background-color: $gray-c;
+    }
+  }
+  .lookup-near {
+    background-color: $white;
+  }
+}
